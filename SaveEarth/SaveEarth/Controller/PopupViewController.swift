@@ -12,8 +12,9 @@ class PopupViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageDescription: UILabel!
-    @IBOutlet weak var countTextField: UITextField!
     @IBOutlet weak var garbageTypeCollectionView: UICollectionView!
+    @IBOutlet weak var selectedTypeLabel: UILabel!
+    @IBOutlet weak var countTextField: UITextField!
     
     private static let TAG_CAMERA_BUTTON = 1001
     private static let TAG_PHOTO_LIBRARY_BUTTON = 1002
@@ -27,6 +28,12 @@ class PopupViewController: UIViewController {
         garbageTypeCollectionView.dataSource = self
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    // MARK:- Event Function
     @IBAction func clickedCameraButton(_ sender: UIButton) {
         
         switch sender.tag {
@@ -56,11 +63,10 @@ class PopupViewController: UIViewController {
         self.countTextField.text = String(count+1)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+    @IBAction func clickedEnrollButton(_ sender: Any) {
+        
+        // 여기서 등록버튼을 누르면 HomeViewController 의 값이 동시에 바뀌도록 설정해줘야함! (이게아마 Noti)
     }
-    
-    
 }
 
 extension PopupViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -85,5 +91,12 @@ extension PopupViewController: UICollectionViewDelegate, UICollectionViewDataSou
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("touch >> \(indexPath.row)")
+        
+        let cell = collectionView.cellForItem(at: indexPath) as? GarbageTypeCollectionViewCell
+        selectedTypeLabel.text = cell?.nameLabel.text
+        countTextField.text = "1"
+    }
     
 }
