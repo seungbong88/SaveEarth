@@ -1,5 +1,5 @@
 //
-//  GarbageTypeCollectionViewCell.swift
+//  WasteTypeCollectionViewCell.swift
 //  SaveEarth
 //
 //  Created by seungbong on 2020/10/25.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GarbageTypeCollectionViewCell: UICollectionViewCell {
+class WasteTypeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

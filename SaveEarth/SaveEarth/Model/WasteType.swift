@@ -9,7 +9,7 @@
 import Foundation
 
 
-enum GarbageType: Int, CaseIterable {
+enum WasteType: Int, CaseIterable {
     case plasticBag = 0     // 비닐봉지
     case plasticTakeOutCup  // 일회용 테이크웃잔
     case plasticBottle      // 플라스틱 병
