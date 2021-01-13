@@ -3,14 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C0486C7D94DD2053CB0D721 /* Pods_SaveEarth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFB46058BBFA87CBF2D104D /* Pods_SaveEarth.framework */; };
+		F70C9660254710B8002ABD9F /* WasteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70C965F254710B8002ABD9F /* WasteInfo.swift */; };
 		F72A72EE25456920006B238C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A72ED25456920006B238C /* UserInfo.swift */; };
 		F73CFB7125455F4E00EEED4D /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CFB7025455F4E00EEED4D /* PopupViewController.swift */; };
 		F73CFB7B254561F900EEED4D /* SaveWastInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CFB7A254561F900EEED4D /* SaveWastInfo.swift */; };
-		F73CFB7F2545622E00EEED4D /* GarbageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CFB7E2545622E00EEED4D /* GarbageType.swift */; };
+		F73CFB7F2545622E00EEED4D /* WasteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CFB7E2545622E00EEED4D /* WasteType.swift */; };
 		F77E43FE25443DA900A0B1BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E43FD25443DA900A0B1BD /* AppDelegate.swift */; };
 		F77E440025443DA900A0B1BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E43FF25443DA900A0B1BD /* SceneDelegate.swift */; };
 		F77E440525443DA900A0B1BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77E440325443DA900A0B1BD /* Main.storyboard */; };
@@ -18,14 +20,21 @@
 		F77E440A25443DAA00A0B1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77E440825443DAA00A0B1BD /* LaunchScreen.storyboard */; };
 		F77E441425443EBF00A0B1BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E441325443EBF00A0B1BD /* HomeViewController.swift */; };
 		F77E441625443EFF00A0B1BD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E441525443EFF00A0B1BD /* TabBarController.swift */; };
-		F7AE878F254570E6007730F1 /* GarbageTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE878E254570E6007730F1 /* GarbageTypeCollectionViewCell.swift */; };
+		F7AE878F254570E6007730F1 /* WasteTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE878E254570E6007730F1 /* WasteTypeCollectionViewCell.swift */; };
+		F7BFB88125AF19EE0012502E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7BFB88025AF19EE0012502E /* GoogleService-Info.plist */; };
+		F7E28345256A538E00FD5021 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E28344256A538E00FD5021 /* UserDefaultManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03B79989769F3BD8AA25AFCB /* Pods-SaveEarth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveEarth.release.xcconfig"; path = "Target Support Files/Pods-SaveEarth/Pods-SaveEarth.release.xcconfig"; sourceTree = "<group>"; };
+		118ACD849533A89C877810F9 /* Pods-SaveEarth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveEarth.debug.xcconfig"; path = "Target Support Files/Pods-SaveEarth/Pods-SaveEarth.debug.xcconfig"; sourceTree = "<group>"; };
+		EEFB46058BBFA87CBF2D104D /* Pods_SaveEarth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaveEarth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F709DDA4259A0C3E0084399C /* SaveEarthDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveEarthDebug.entitlements; sourceTree = "<group>"; };
+		F70C965F254710B8002ABD9F /* WasteInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteInfo.swift; sourceTree = "<group>"; };
 		F72A72ED25456920006B238C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		F73CFB7025455F4E00EEED4D /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		F73CFB7A254561F900EEED4D /* SaveWastInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWastInfo.swift; sourceTree = "<group>"; };
-		F73CFB7E2545622E00EEED4D /* GarbageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarbageType.swift; sourceTree = "<group>"; };
+		F73CFB7E2545622E00EEED4D /* WasteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteType.swift; sourceTree = "<group>"; };
 		F77E43FA25443DA900A0B1BD /* SaveEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77E43FD25443DA900A0B1BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F77E43FF25443DA900A0B1BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +44,9 @@
 		F77E440B25443DAA00A0B1BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F77E441325443EBF00A0B1BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F77E441525443EFF00A0B1BD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		F7AE878E254570E6007730F1 /* GarbageTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarbageTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7AE878E254570E6007730F1 /* WasteTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7BFB88025AF19EE0012502E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SaveEarth/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F7E28344256A538E00FD5021 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,19 +54,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0486C7D94DD2053CB0D721 /* Pods_SaveEarth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1022EB94D5E896D440943FB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEFB46058BBFA87CBF2D104D /* Pods_SaveEarth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A2A9DEF7E06B981CD0CF384 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				118ACD849533A89C877810F9 /* Pods-SaveEarth.debug.xcconfig */,
+				03B79989769F3BD8AA25AFCB /* Pods-SaveEarth.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F73CFB77254560A000EEED4D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				F7AE878D254570BC007730F1 /* Cell */,
 				F73CFB7A254561F900EEED4D /* SaveWastInfo.swift */,
-				F73CFB7E2545622E00EEED4D /* GarbageType.swift */,
+				F73CFB7E2545622E00EEED4D /* WasteType.swift */,
 				F72A72ED25456920006B238C /* UserInfo.swift */,
+				F70C965F254710B8002ABD9F /* WasteInfo.swift */,
+				F7E28344256A538E00FD5021 /* UserDefaultManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,8 +113,11 @@
 		F77E43F125443DA900A0B1BD = {
 			isa = PBXGroup;
 			children = (
+				F7BFB88025AF19EE0012502E /* GoogleService-Info.plist */,
 				F77E43FC25443DA900A0B1BD /* SaveEarth */,
 				F77E43FB25443DA900A0B1BD /* Products */,
+				4A2A9DEF7E06B981CD0CF384 /* Pods */,
+				1022EB94D5E896D440943FB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +132,7 @@
 		F77E43FC25443DA900A0B1BD /* SaveEarth */ = {
 			isa = PBXGroup;
 			children = (
+				F709DDA4259A0C3E0084399C /* SaveEarthDebug.entitlements */,
 				F73CFB77254560A000EEED4D /* Model */,
 				F73CFB79254560B300EEED4D /* View */,
 				F73CFB78254560B000EEED4D /* Controller */,
@@ -112,7 +147,7 @@
 		F7AE878D254570BC007730F1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				F7AE878E254570E6007730F1 /* GarbageTypeCollectionViewCell.swift */,
+				F7AE878E254570E6007730F1 /* WasteTypeCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -124,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F77E440E25443DAA00A0B1BD /* Build configuration list for PBXNativeTarget "SaveEarth" */;
 			buildPhases = (
+				B57F807B77AB07DFBDDD6D3D /* [CP] Check Pods Manifest.lock */,
 				F77E43F625443DA900A0B1BD /* Sources */,
 				F77E43F725443DA900A0B1BD /* Frameworks */,
 				F77E43F825443DA900A0B1BD /* Resources */,
+				A7906537A78641D908E6A164 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,12 +213,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77E440A25443DAA00A0B1BD /* LaunchScreen.storyboard in Resources */,
+				F7BFB88125AF19EE0012502E /* GoogleService-Info.plist in Resources */,
 				F77E440725443DAA00A0B1BD /* Assets.xcassets in Resources */,
 				F77E440525443DA900A0B1BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7906537A78641D908E6A164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaveEarth/Pods-SaveEarth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaveEarth/Pods-SaveEarth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaveEarth/Pods-SaveEarth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B57F807B77AB07DFBDDD6D3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaveEarth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F77E43F625443DA900A0B1BD /* Sources */ = {
@@ -192,11 +272,13 @@
 				F73CFB7B254561F900EEED4D /* SaveWastInfo.swift in Sources */,
 				F77E43FE25443DA900A0B1BD /* AppDelegate.swift in Sources */,
 				F77E440025443DA900A0B1BD /* SceneDelegate.swift in Sources */,
+				F70C9660254710B8002ABD9F /* WasteInfo.swift in Sources */,
 				F72A72EE25456920006B238C /* UserInfo.swift in Sources */,
 				F77E441625443EFF00A0B1BD /* TabBarController.swift in Sources */,
+				F7E28345256A538E00FD5021 /* UserDefaultManager.swift in Sources */,
 				F77E441425443EBF00A0B1BD /* HomeViewController.swift in Sources */,
-				F7AE878F254570E6007730F1 /* GarbageTypeCollectionViewCell.swift in Sources */,
-				F73CFB7F2545622E00EEED4D /* GarbageType.swift in Sources */,
+				F7AE878F254570E6007730F1 /* WasteTypeCollectionViewCell.swift in Sources */,
+				F73CFB7F2545622E00EEED4D /* WasteType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,19 +420,21 @@
 		};
 		F77E440F25443DAA00A0B1BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118ACD849533A89C877810F9 /* Pods-SaveEarth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = SaveEarth/SaveEarthDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QKG65XDLX8;
 				INFOPLIST_FILE = SaveEarth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seung.SaveEarth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bong.saveEarth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = DEV_SaveEarth;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -358,19 +442,20 @@
 		};
 		F77E441025443DAA00A0B1BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B79989769F3BD8AA25AFCB /* Pods-SaveEarth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QKG65XDLX8;
 				INFOPLIST_FILE = SaveEarth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seung.SaveEarth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bong.saveEarth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = DEV_SaveEarth;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

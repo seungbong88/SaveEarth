@@ -11,11 +11,11 @@ import UIKit
 
 class SaveWastInfo {
     var image: UIImage?
-    var kinds: GarbageType?
+    var kinds: WasteType?
     var count: Int = 0
     var regesterDate: String?
     
-    init(image: UIImage, kinds: GarbageType, count: Int) {
+    init(image: UIImage, kinds: WasteType, count: Int) {
         self.image = image
     }
 }

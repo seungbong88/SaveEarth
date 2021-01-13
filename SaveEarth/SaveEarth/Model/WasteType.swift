@@ -1,5 +1,5 @@
 //
-//  GarbageType.swift
+//  WasteType.swift
 //  SaveEarth
 //
 //  Created by seungbong on 2020/10/25.

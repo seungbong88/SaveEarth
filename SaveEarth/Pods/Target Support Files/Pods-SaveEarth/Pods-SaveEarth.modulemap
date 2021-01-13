@@ -1,0 +1,6 @@
+framework module Pods_SaveEarth {
+  umbrella header "Pods-SaveEarth-umbrella.h"
+
+  export *
+  module * { export * }
+}

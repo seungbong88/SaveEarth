@@ -12,20 +12,21 @@ class PopupViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageDescription: UILabel!
-    @IBOutlet weak var garbageTypeCollectionView: UICollectionView!
+    @IBOutlet weak var wasteTypeCollectionView: UICollectionView!
     @IBOutlet weak var selectedTypeLabel: UILabel!
     @IBOutlet weak var countTextField: UITextField!
     
     private static let TAG_CAMERA_BUTTON = 1001
     private static let TAG_PHOTO_LIBRARY_BUTTON = 1002
     
-    let imagePickerController = UIImagePickerController()
+    private let imagePickerController = UIImagePickerController()
+    private var selectedCellIndex: Int = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePickerController.delegate = self
-        garbageTypeCollectionView.delegate = self
-        garbageTypeCollectionView.dataSource = self
+        wasteTypeCollectionView.delegate = self
+        wasteTypeCollectionView.dataSource = self
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -60,13 +61,25 @@ class PopupViewController: UIViewController {
     
     @IBAction func clickedCountPlusButton(_ sender: Any) {
         let count:Int = Int(countTextField.text ?? "") ?? 0
-        self.countTextField.text = String(count+1)
+        countTextField.text = String(count+1)
     }
     
     @IBAction func clickedEnrollButton(_ sender: Any) {
+        if selectedCellIndex != -1 {
+            if let type = WasteType.init(rawValue: selectedCellIndex),
+               let count = Int(countTextField.text ?? ""),
+               let image = imageView.image {
+                let wasteInfo = WasteInfo(savedImage: image, wasteType: type, wasteCount: count)
+                // 노티노티!
+                NotificationCenter.default.post(name: Notification.Name("Noti_EditWasteTime"), object: wasteInfo)
+                print("wasteInfo.totalRotTime: \(wasteInfo.totalRotTime)")
+            }
+        }
         
-        // 여기서 등록버튼을 누르면 HomeViewController 의 값이 동시에 바뀌도록 설정해줘야함! (이게아마 Noti)
+        dismiss(animated: true, completion: nil)
     }
+    
+    
 }
 
 extension PopupViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -82,19 +95,20 @@ extension PopupViewController: UIImagePickerControllerDelegate, UINavigationCont
 
 extension PopupViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return GarbageType.allCases.count
+        return WasteType.allCases.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GarbageTypeCell", for: indexPath) as! GarbageTypeCollectionViewCell
-        cell.nameLabel.text = GarbageType.init(rawValue: indexPath.row)?.name ?? ""
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WasteTypeCell", for: indexPath) as! WasteTypeCollectionViewCell
+        cell.nameLabel.text = WasteType.init(rawValue: indexPath.row)?.name ?? ""
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("touch >> \(indexPath.row)")
         
-        let cell = collectionView.cellForItem(at: indexPath) as? GarbageTypeCollectionViewCell
+        selectedCellIndex = indexPath.row
+        let cell = collectionView.cellForItem(at: indexPath) as? WasteTypeCollectionViewCell
         selectedTypeLabel.text = cell?.nameLabel.text
         countTextField.text = "1"
     }
