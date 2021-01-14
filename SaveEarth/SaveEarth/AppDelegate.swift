@@ -8,20 +8,28 @@
 
 import UIKit
 import Firebase
+import KakaoSDKCommon
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        FirebaseApp.configure()
-        
-        // 푸시 알림 등록
-        registPush()
+        initialize()
         
         return true
     }
 
+    private func initialize() {
+        
+        // Firebase 시작
+        FirebaseApp.configure()
+        
+        // kakao API 시작
+        KakaoSDKCommon.initSDK(appKey: Common.KAKAO_NATIVE_KEY)
+        
+        // 푸시 알림 등록
+        initPush()
+    }
     
     
     // MARK: UISceneSession Lifecycle
@@ -40,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     
     // MARK: Push Notification Delegate
-    private func registPush() {
+    private func initPush() {
         
         UNUserNotificationCenter.current().delegate = self
         Messaging.messaging().delegate = self

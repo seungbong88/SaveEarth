@@ -21,6 +21,7 @@
 		F77E440A25443DAA00A0B1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77E440825443DAA00A0B1BD /* LaunchScreen.storyboard */; };
 		F77E441425443EBF00A0B1BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E441325443EBF00A0B1BD /* HomeViewController.swift */; };
 		F77E441625443EFF00A0B1BD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E441525443EFF00A0B1BD /* TabBarController.swift */; };
+		F7AD558A25B0A3E100AFBF09 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AD558925B0A3E100AFBF09 /* LeftViewController.swift */; };
 		F7AE878F254570E6007730F1 /* WasteTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE878E254570E6007730F1 /* WasteTypeCollectionViewCell.swift */; };
 		F7BFB88125AF19EE0012502E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7BFB88025AF19EE0012502E /* GoogleService-Info.plist */; };
 		F7E28345256A538E00FD5021 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E28344256A538E00FD5021 /* UserDefaultManager.swift */; };
@@ -46,6 +47,7 @@
 		F77E440B25443DAA00A0B1BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F77E441325443EBF00A0B1BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F77E441525443EFF00A0B1BD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F7AD558925B0A3E100AFBF09 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		F7AE878E254570E6007730F1 /* WasteTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7BFB88025AF19EE0012502E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SaveEarth/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F7E28344256A538E00FD5021 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				F77E441525443EFF00A0B1BD /* TabBarController.swift */,
 				F77E441325443EBF00A0B1BD /* HomeViewController.swift */,
 				F73CFB7025455F4E00EEED4D /* PopupViewController.swift */,
+				F7AD558925B0A3E100AFBF09 /* LeftViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				F73CFB7B254561F900EEED4D /* SaveWastInfo.swift in Sources */,
 				F77E43FE25443DA900A0B1BD /* AppDelegate.swift in Sources */,
 				F77E440025443DA900A0B1BD /* SceneDelegate.swift in Sources */,
+				F7AD558A25B0A3E100AFBF09 /* LeftViewController.swift in Sources */,
 				0B5D4D8E25AFDCAA00E907AC /* Common.swift in Sources */,
 				F70C9660254710B8002ABD9F /* WasteInfo.swift in Sources */,
 				F72A72EE25456920006B238C /* UserInfo.swift in Sources */,
