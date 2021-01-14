@@ -60,13 +60,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     // 포그라운드에서 푸시알림 수신 시 호출
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        // 포그라운드에서도 푸시얼럿, 사운드 되도록 설정
         completionHandler([.alert, .sound])
     }
     
     // 푸시알림 선택 시 호출
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         let userInfo = response.notification.request.content.userInfo
-        Common.showToast(message: "")
+        if let aps = userInfo["aps"] as? [String : Any] {
+            if let alert = aps["alert"] as? [String : Any] {
+                let title: String = alert["title"] as? String ?? ""
+                let message: String = alert["body"] as? String ?? ""
+                Common.showToast(title: title, message: message)
+            }
+        }
+        
         completionHandler()
     }
     
