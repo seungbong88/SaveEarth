@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
 
     
-    // MARK: Push Notification
+    // MARK: Push Notification Delegate
     private func registPush() {
         
         UNUserNotificationCenter.current().delegate = self
@@ -57,23 +57,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("[Push Notification] device token fail")
     }
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        print("들어옴요! \(userInfo)")
-        let gcmMessageIDKey = "gcm.message.id"
-        if let messageId = userInfo[gcmMessageIDKey] {
-            print("[Push Notification] \(messageId)")
-        }
-    }
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-        print("들어옴요! \(userInfo)")
+    
+    // 포그라운드에서 푸시알림 수신 시 호출
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound])
     }
     
+    // 푸시알림 선택 시 호출
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        Common.showToast(message: "")
+        completionHandler()
+    }
+    
+    // MARK: Firebase Messaging Delegate
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
         print("Firebase registeration token : \(String(describing: fcmToken))")
         
-        let dataDic: [String : String] = ["token" : fcmToken ?? ""]
+        let dataDic: [String: String] = ["token" : fcmToken ?? ""]
         NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDic)
         
+        
+        // FCM 토큰 처리
         Messaging.messaging().token { token, error in
           if let error = error {
             print("Error fetching FCM registration token: \(error)")
