@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B5D4D8E25AFDCAA00E907AC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D4D8D25AFDCAA00E907AC /* Common.swift */; };
 		8C0486C7D94DD2053CB0D721 /* Pods_SaveEarth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFB46058BBFA87CBF2D104D /* Pods_SaveEarth.framework */; };
-		F70C9660254710B8002ABD9F /* WasteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70C965F254710B8002ABD9F /* WasteInfo.swift */; };
 		F72A72EE25456920006B238C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A72ED25456920006B238C /* UserInfo.swift */; };
 		F73CFB7125455F4E00EEED4D /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CFB7025455F4E00EEED4D /* PopupViewController.swift */; };
-		F73CFB7B254561F900EEED4D /* SaveWastInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CFB7A254561F900EEED4D /* SaveWastInfo.swift */; };
-		F73CFB7F2545622E00EEED4D /* WasteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CFB7E2545622E00EEED4D /* WasteType.swift */; };
+		F73CFB7B254561F900EEED4D /* EnrolledWasteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CFB7A254561F900EEED4D /* EnrolledWasteInfo.swift */; };
 		F77E43FE25443DA900A0B1BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E43FD25443DA900A0B1BD /* AppDelegate.swift */; };
 		F77E440025443DA900A0B1BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E43FF25443DA900A0B1BD /* SceneDelegate.swift */; };
 		F77E440525443DA900A0B1BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77E440325443DA900A0B1BD /* Main.storyboard */; };
@@ -21,6 +19,8 @@
 		F77E440A25443DAA00A0B1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77E440825443DAA00A0B1BD /* LaunchScreen.storyboard */; };
 		F77E441425443EBF00A0B1BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E441325443EBF00A0B1BD /* HomeViewController.swift */; };
 		F77E441625443EFF00A0B1BD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E441525443EFF00A0B1BD /* TabBarController.swift */; };
+		F79D9E0D25B3622E00933E3F /* Waste.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79D9E0C25B3622E00933E3F /* Waste.swift */; };
+		F7A6255425B16E0000E23226 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A6255325B16E0000E23226 /* SessionManager.swift */; };
 		F7AD558A25B0A3E100AFBF09 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AD558925B0A3E100AFBF09 /* LeftViewController.swift */; };
 		F7AE878F254570E6007730F1 /* WasteTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE878E254570E6007730F1 /* WasteTypeCollectionViewCell.swift */; };
 		F7BFB88125AF19EE0012502E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7BFB88025AF19EE0012502E /* GoogleService-Info.plist */; };
@@ -33,11 +33,9 @@
 		118ACD849533A89C877810F9 /* Pods-SaveEarth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveEarth.debug.xcconfig"; path = "Target Support Files/Pods-SaveEarth/Pods-SaveEarth.debug.xcconfig"; sourceTree = "<group>"; };
 		EEFB46058BBFA87CBF2D104D /* Pods_SaveEarth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaveEarth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F709DDA4259A0C3E0084399C /* SaveEarthDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveEarthDebug.entitlements; sourceTree = "<group>"; };
-		F70C965F254710B8002ABD9F /* WasteInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteInfo.swift; sourceTree = "<group>"; };
 		F72A72ED25456920006B238C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		F73CFB7025455F4E00EEED4D /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
-		F73CFB7A254561F900EEED4D /* SaveWastInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWastInfo.swift; sourceTree = "<group>"; };
-		F73CFB7E2545622E00EEED4D /* WasteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteType.swift; sourceTree = "<group>"; };
+		F73CFB7A254561F900EEED4D /* EnrolledWasteInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrolledWasteInfo.swift; sourceTree = "<group>"; };
 		F77E43FA25443DA900A0B1BD /* SaveEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77E43FD25443DA900A0B1BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F77E43FF25443DA900A0B1BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		F77E440B25443DAA00A0B1BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F77E441325443EBF00A0B1BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F77E441525443EFF00A0B1BD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F79D9E0C25B3622E00933E3F /* Waste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waste.swift; sourceTree = "<group>"; };
+		F7A6255325B16E0000E23226 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		F7AD558925B0A3E100AFBF09 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		F7AE878E254570E6007730F1 /* WasteTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7BFB88025AF19EE0012502E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SaveEarth/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -69,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				0B5D4D8D25AFDCAA00E907AC /* Common.swift */,
+				F7A6255325B16E0000E23226 /* SessionManager.swift */,
+				F7E28344256A538E00FD5021 /* UserDefaultManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -94,11 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				F7AE878D254570BC007730F1 /* Cell */,
-				F73CFB7A254561F900EEED4D /* SaveWastInfo.swift */,
-				F73CFB7E2545622E00EEED4D /* WasteType.swift */,
+				F79D9E0C25B3622E00933E3F /* Waste.swift */,
+				F73CFB7A254561F900EEED4D /* EnrolledWasteInfo.swift */,
 				F72A72ED25456920006B238C /* UserInfo.swift */,
-				F70C965F254710B8002ABD9F /* WasteInfo.swift */,
-				F7E28344256A538E00FD5021 /* UserDefaultManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "한승희";
 				TargetAttributes = {
 					F77E43F925443DA900A0B1BD = {
@@ -283,18 +283,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F73CFB7125455F4E00EEED4D /* PopupViewController.swift in Sources */,
-				F73CFB7B254561F900EEED4D /* SaveWastInfo.swift in Sources */,
+				F73CFB7B254561F900EEED4D /* EnrolledWasteInfo.swift in Sources */,
 				F77E43FE25443DA900A0B1BD /* AppDelegate.swift in Sources */,
 				F77E440025443DA900A0B1BD /* SceneDelegate.swift in Sources */,
 				F7AD558A25B0A3E100AFBF09 /* LeftViewController.swift in Sources */,
 				0B5D4D8E25AFDCAA00E907AC /* Common.swift in Sources */,
-				F70C9660254710B8002ABD9F /* WasteInfo.swift in Sources */,
+				F79D9E0D25B3622E00933E3F /* Waste.swift in Sources */,
+				F7A6255425B16E0000E23226 /* SessionManager.swift in Sources */,
 				F72A72EE25456920006B238C /* UserInfo.swift in Sources */,
 				F77E441625443EFF00A0B1BD /* TabBarController.swift in Sources */,
 				F7E28345256A538E00FD5021 /* UserDefaultManager.swift in Sources */,
 				F77E441425443EBF00A0B1BD /* HomeViewController.swift in Sources */,
 				F7AE878F254570E6007730F1 /* WasteTypeCollectionViewCell.swift in Sources */,
-				F73CFB7F2545622E00EEED4D /* WasteType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +346,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -406,6 +407,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -448,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bong.saveEarth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bong.saveEarths;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -469,7 +471,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bong.saveEarth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bong.saveEarths;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
