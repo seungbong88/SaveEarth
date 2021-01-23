@@ -12,13 +12,15 @@
 		F72A72EE25456920006B238C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A72ED25456920006B238C /* UserInfo.swift */; };
 		F73CFB7125455F4E00EEED4D /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CFB7025455F4E00EEED4D /* PopupViewController.swift */; };
 		F73CFB7B254561F900EEED4D /* EnrolledWasteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73CFB7A254561F900EEED4D /* EnrolledWasteInfo.swift */; };
+		F769BDB725BC9CEA002186D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769BDB625BC9CEA002186D0 /* SceneDelegate.swift */; };
 		F77E43FE25443DA900A0B1BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E43FD25443DA900A0B1BD /* AppDelegate.swift */; };
-		F77E440025443DA900A0B1BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E43FF25443DA900A0B1BD /* SceneDelegate.swift */; };
 		F77E440525443DA900A0B1BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77E440325443DA900A0B1BD /* Main.storyboard */; };
 		F77E440725443DAA00A0B1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77E440625443DAA00A0B1BD /* Assets.xcassets */; };
 		F77E440A25443DAA00A0B1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77E440825443DAA00A0B1BD /* LaunchScreen.storyboard */; };
 		F77E441425443EBF00A0B1BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E441325443EBF00A0B1BD /* HomeViewController.swift */; };
 		F77E441625443EFF00A0B1BD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E441525443EFF00A0B1BD /* TabBarController.swift */; };
+		F793B9A825BC84F000A90EE9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F793B9A725BC84F000A90EE9 /* Login.storyboard */; };
+		F793B9AB25BC850600A90EE9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F793B9AA25BC850600A90EE9 /* LoginViewController.swift */; };
 		F79D9E0D25B3622E00933E3F /* Waste.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79D9E0C25B3622E00933E3F /* Waste.swift */; };
 		F7A6255425B16E0000E23226 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A6255325B16E0000E23226 /* SessionManager.swift */; };
 		F7AD558A25B0A3E100AFBF09 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AD558925B0A3E100AFBF09 /* LeftViewController.swift */; };
@@ -36,15 +38,17 @@
 		F72A72ED25456920006B238C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		F73CFB7025455F4E00EEED4D /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		F73CFB7A254561F900EEED4D /* EnrolledWasteInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrolledWasteInfo.swift; sourceTree = "<group>"; };
+		F769BDB625BC9CEA002186D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F77E43FA25443DA900A0B1BD /* SaveEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77E43FD25443DA900A0B1BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F77E43FF25443DA900A0B1BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F77E440425443DA900A0B1BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F77E440625443DAA00A0B1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F77E440925443DAA00A0B1BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F77E440B25443DAA00A0B1BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F77E441325443EBF00A0B1BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F77E441525443EFF00A0B1BD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F793B9A725BC84F000A90EE9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F793B9AA25BC850600A90EE9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F79D9E0C25B3622E00933E3F /* Waste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waste.swift; sourceTree = "<group>"; };
 		F7A6255325B16E0000E23226 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		F7AD558925B0A3E100AFBF09 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				F77E441325443EBF00A0B1BD /* HomeViewController.swift */,
 				F73CFB7025455F4E00EEED4D /* PopupViewController.swift */,
 				F7AD558925B0A3E100AFBF09 /* LeftViewController.swift */,
+				F793B9AA25BC850600A90EE9 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			children = (
 				F77E440325443DA900A0B1BD /* Main.storyboard */,
 				F77E440825443DAA00A0B1BD /* LaunchScreen.storyboard */,
+				F793B9A725BC84F000A90EE9 /* Login.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,8 +158,8 @@
 				F73CFB78254560B000EEED4D /* Controller */,
 				F77E440B25443DAA00A0B1BD /* Info.plist */,
 				F77E43FD25443DA900A0B1BD /* AppDelegate.swift */,
-				F77E43FF25443DA900A0B1BD /* SceneDelegate.swift */,
 				F77E440625443DAA00A0B1BD /* Assets.xcassets */,
+				F769BDB625BC9CEA002186D0 /* SceneDelegate.swift */,
 			);
 			path = SaveEarth;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 				F77E440A25443DAA00A0B1BD /* LaunchScreen.storyboard in Resources */,
 				F7BFB88125AF19EE0012502E /* GoogleService-Info.plist in Resources */,
 				F77E440725443DAA00A0B1BD /* Assets.xcassets in Resources */,
+				F793B9A825BC84F000A90EE9 /* Login.storyboard in Resources */,
 				F77E440525443DA900A0B1BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,10 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F793B9AB25BC850600A90EE9 /* LoginViewController.swift in Sources */,
+				F769BDB725BC9CEA002186D0 /* SceneDelegate.swift in Sources */,
 				F73CFB7125455F4E00EEED4D /* PopupViewController.swift in Sources */,
 				F73CFB7B254561F900EEED4D /* EnrolledWasteInfo.swift in Sources */,
 				F77E43FE25443DA900A0B1BD /* AppDelegate.swift in Sources */,
-				F77E440025443DA900A0B1BD /* SceneDelegate.swift in Sources */,
 				F7AD558A25B0A3E100AFBF09 /* LeftViewController.swift in Sources */,
 				0B5D4D8E25AFDCAA00E907AC /* Common.swift in Sources */,
 				F79D9E0D25B3622E00933E3F /* Waste.swift in Sources */,
@@ -450,11 +458,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bong.saveEarths;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bong.saveEarth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,11 +480,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bong.saveEarths;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bong.saveEarth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
