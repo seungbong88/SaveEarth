@@ -8,6 +8,7 @@ target 'SaveEarth' do
   # Pods for SaveEarth
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
+  pod 'Firebase/Database'
   pod 'KakaoSDKCommon'  # 필수 요소를 담은 공통 모듈
   pod 'KakaoSDKLink'    # 메시지(카카오링크)
   pod 'KakaoSDKAuth'    # 카카오 로그인

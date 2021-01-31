@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
                                                object: nil)
         
         // 임시 로그인 처리
-        SessionManager.userData = UserInfo(id: "seungbong8.8@gmail.com", name: "한승희")
+//        SessionManager.userData = UserInfo(id: "seungbong8.8@gmail.com", name: "한승희")
     }
     
     @objc private func updateWastTime(_ notification: Notification) {

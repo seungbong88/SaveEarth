@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 /* 세션이 유지되는 동안 함께 유지되는 데이터 */
 class SessionManager {
     static var userData: UserInfo?
+    static var appDelegate = UIApplication.shared.delegate as! AppDelegate
 }

@@ -15,8 +15,15 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        databaseTest()
     }
     
+    private func databaseTest() {
+        SessionManager.userData = UserInfo(id: "seungbong8.8@gmail.com", name: "한승희")
+        if let id = SessionManager.userData?.id, let name = SessionManager.userData?.name {
+            SessionManager.appDelegate.databaseRef?.child("테스트계정임다").setValue(["email": id])
+        }
+    }
 
     @IBAction func clickedKakaoLogin(_ sender: Any) {
         if AuthApi.isKakaoTalkLoginAvailable() {

@@ -18,6 +18,38 @@
             endingLineNumber = "62"
             landmarkName = "clickedInviteButton(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BED83D66-3B30-48E0-B1B0-82A409648B2E - 83a298e745543235"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SaveEarth.LeftViewController.clickedInviteButton(Any) -&gt; ()"
+                  moduleName = "SaveEarth"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bong/workspace/git/SaveEarthProject/SaveEarth/SaveEarth/Controller/LeftViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1216">
+               </Location>
+               <Location
+                  uuid = "BED83D66-3B30-48E0-B1B0-82A409648B2E - 1b0736eb5f6e30c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;KakaoSDKLink.LinkResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SaveEarth.LeftViewController.clickedInviteButton(Any) -&gt; ()"
+                  moduleName = "SaveEarth"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bong/workspace/git/SaveEarthProject/SaveEarth/SaveEarth/Controller/LeftViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "316">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,8 +110,8 @@
             filePath = "SaveEarth/Controller/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "clickedKakaoLogin(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +126,8 @@
             filePath = "SaveEarth/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "application(_:open:options:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -113,6 +145,22 @@
             startingLineNumber = "16"
             endingLineNumber = "16"
             landmarkName = "scene(_:openURLContexts:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCA08772-64AD-48C2-B8A7-31B8F8B30D0C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SaveEarth/Controller/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "databaseTest()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -14,6 +14,8 @@ import KakaoSDKAuth
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
         
+    var databaseRef: DatabaseReference?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         initialize()
         
@@ -22,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     private func initialize() {
         // Firebase 시작
-        FirebaseApp.configure()
+        initFirebase()
         
         // kakao API 시작
         KakaoSDKCommon.initSDK(appKey: Common.KAKAO_NATIVE_KEY)
@@ -68,7 +70,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         completionHandler()
     }
     
+    
     // MARK: Push Notification Delegate
+    private func initFirebase() {
+        FirebaseApp.configure()
+        self.databaseRef = Database.database().reference()
+    }
+    
     private func initPush() {
         UNUserNotificationCenter.current().delegate = self
         Messaging.messaging().delegate = self
